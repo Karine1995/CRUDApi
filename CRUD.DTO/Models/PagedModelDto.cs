@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CRUD.DTO.Models
+{
+    public class PagedModelDto<T>
+    {
+        public List<T> Entities { get; set; }
+        public int Count { get; set; }
+        public Dictionary<string, string> AdditionalInfo { get; set; }
+    }
+}
